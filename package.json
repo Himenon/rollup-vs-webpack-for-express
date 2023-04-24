@@ -1,7 +1,9 @@
 {
 	"scripts": {
 		"rollup:build": "rollup -c rollup.config.mjs",
-		"webpack:build": "webpack"
+		"rollup:watch": "rollup -c rollup.config.mjs --watch",
+		"webpack:build": "webpack",
+		"webpack:watch": "webpack --watch"
 	},
 	"dependencies": {
 		"express": "^4.18.2"
