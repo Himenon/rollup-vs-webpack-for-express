@@ -1,12 +1,7 @@
 import commonjs from "@rollup/plugin-commonjs";
 import json from "@rollup/plugin-json";
 import resolve from "@rollup/plugin-node-resolve";
-import originalSwc from "rollup-plugin-swc";
-
-/**
- * @type {import("rollup-plugin-swc").RollupPluginSWC}
- */
-const swc = originalSwc.default;
+import { swc } from 'rollup-plugin-swc3';
 
 /**
  * @type {import("rollup").RollupOptions}
