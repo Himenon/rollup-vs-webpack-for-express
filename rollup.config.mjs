@@ -1,7 +1,7 @@
 import commonjs from "@rollup/plugin-commonjs";
 import json from "@rollup/plugin-json";
 import resolve from "@rollup/plugin-node-resolve";
-import { swc } from 'rollup-plugin-swc3';
+import { swc } from "rollup-plugin-swc3";
 
 /**
  * @type {import("rollup").RollupOptions}
@@ -13,7 +13,8 @@ export default {
     file: "dist/rollup-server.cjs",
     generatedCode: {
       constBindings: true,
-    }
+    },
+    sourcemap: true,
   },
   plugins: [
     resolve({
@@ -24,6 +25,7 @@ export default {
     commonjs(),
     json(),
     swc({
+      sourceMaps: true,
       jsc: {
         target: "es2020",
         parser: {
