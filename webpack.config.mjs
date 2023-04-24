@@ -14,6 +14,7 @@ export default {
       filename: "[name].cjs",
       clean: false,
     },
+    devtool: "source-map",
     optimization: {
       minimize: false,
     },
